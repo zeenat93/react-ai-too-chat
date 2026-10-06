@@ -1,16 +1,63 @@
-# React + Vite
+Markdown
+# 🚀 AI Search & Chat Assistant
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, highly responsive AI-powered search and chat web application built with **React.js** and **Tailwind CSS**, integrated directly with the **Google Gemini AI API**. This application features dynamic theme switching, local storage management, rich markdown rendering, and syntax highlighting.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## React Compiler
+- **AI-Powered Responses:** Fetches real-time answers and structured text via Google Gemini AI REST API.
+- **Rich Markdown & Syntax Highlighting:** Automatically formats AI responses with clean markdown (`react-markdown`) and syntax-highlighted code blocks (`react-syntax-highlighter`).
+- **Persistent Search History:** Saves recent searches to browser `localStorage`, complete with duplicate removal logic and a strict item limit.
+- **Interactive History Management:** Users can instantly re-run previous queries with a single click or delete individual/all history items.
+- **Dynamic Dark/Light Mode:** Responsive theme switcher with preferences saved persistently in local storage.
+- **Modern UI/UX:** Styled completely with utility-first Tailwind CSS, featuring custom loaders and smooth scrolling.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Frontend:** React.js (Vite)
+- **Styling:** Tailwind CSS
+- **AI Engine:** Google Gemini AI API (`v1beta`)
+- **Key Libraries:**
+  - `react-markdown`
+  - `react-syntax-highlighter`
+
+---
+
+## ⚙️ Installation & Local Setup
+
+To run this project locally on your machine, follow these steps:
+
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/zeenat93/react-ai-too-chat.git](https://github.com/zeenat93/react-ai-too-chat.git)
+2:Navigate to the project directory:
+
+Bash
+cd react_ai_tool
+Install dependencies:
+
+3:Bash
+npm install
+Configure API Key:
+
+4:Note: Currently, a .env file is not being used in this setup. You can insert your Google Gemini API key directly into your project's configuration file (such as constants.js) where the API key variable is defined before running the app.
+
+Run the development server:
+
+Bash
+npm run dev
+💡 What I Learned
+Building this project helped me strengthen my core React and frontend development skills, including:
+
+Managing complex state flows (useState, useEffect, useRef).
+
+Handling asynchronous JavaScript operations and REST API error management.
+
+Utilizing browser localStorage combined with JSON.parse and JSON.stringify for data persistence.
+
+Implementing advanced JavaScript array and string manipulation techniques (map, filter, Set, slice, charAt).
+
